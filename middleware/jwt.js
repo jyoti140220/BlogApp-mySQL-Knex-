@@ -18,4 +18,5 @@ const varifyToken=(req,res,next)=>{
         next()})
 }
 
+
 module.exports={createToken,varifyToken}

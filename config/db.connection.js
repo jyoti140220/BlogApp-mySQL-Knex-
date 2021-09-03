@@ -7,6 +7,6 @@ const knex=require('knex')({
         database:process.env.DATABASE
     }
 })
-console.log(process.env.DATABASE)
+
 
 module.exports=knex
