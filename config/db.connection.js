@@ -3,9 +3,10 @@ const knex=require('knex')({
     connection:{
         host:'localhost',
         user:'root',
-        password:'Jyoti34@12',
-        database:'BlogApp'
+        password:process.env.PASSWORD,
+        database:process.env.DATABASE
     }
 })
+console.log(process.env.DATABASE)
 
 module.exports=knex
