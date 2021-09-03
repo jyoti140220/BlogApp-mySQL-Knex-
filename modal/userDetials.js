@@ -11,7 +11,7 @@ knex.schema.createTableIfNotExists('users', (table) => {
 knex.schema.createTableIfNotExists('postTable',(table)=>{
     table.increments('id');
     table.string('post');
-    table.string('discription');
+    table.string('description');
     table.integer('like').notNullable().defaultTo('0')
     table.integer('dislike').notNullable().defaultTo('0')
 }).then(()=>{console.log("post table created..")}).catch((err)=>{console.log(err)})

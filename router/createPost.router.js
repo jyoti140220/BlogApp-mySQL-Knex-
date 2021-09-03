@@ -4,6 +4,6 @@ const {createToken,varifyToken}=require('../middleware/jwt.js')
 
 const createPost=require('../controller/createPost.js')
 
-router.get('/',varifyToken,createPost)
+router.post('/',varifyToken,createPost)
 
 module.exports=router
