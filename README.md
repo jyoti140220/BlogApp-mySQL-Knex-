@@ -49,7 +49,7 @@ $ sudo apt-get install snap $ snap install postman
 ```
 $ npm start
 
-http://localhost:4050/<endpoint>
+http://localhost:9000/<endpoint>
 
 ```
 
